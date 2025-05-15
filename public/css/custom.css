@@ -1,0 +1,33 @@
+/* Ensure password input styling */
+#password {
+    color: rgb(0, 0, 0) !important; 
+    background-color: white !important;
+    border: 2px solid #a3a3a3 !important; 
+}
+
+#password:focus {
+    color: rgb(0, 0, 0) !important; /* Keep text black on focus */
+    background-color: white !important;
+    border: 1px solid #727272 !important;
+}
+
+#password::placeholder {
+    color: grey; /* Set placeholder text color (optional) */
+}
+
+#email {
+    color: rgb(0, 0, 0) !important; 
+    background-color: white !important; 
+    border: 2px solid #a3a3a3 !important; 
+}
+
+#email:focus {
+    color: rgb(0, 0, 0) !important; /* Keep text black on focus */
+    background-color: white !important;
+    border: 1px solid #727272 !important;
+}
+
+#email::placeholder {
+    color: grey; /* Set placeholder text color (optional) */
+}
+

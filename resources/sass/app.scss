@@ -1,0 +1,63 @@
+/* resources/sass/app.scss */
+
+// Import Bootstrap and your custom variables
+@use 'bootstrap/scss/bootstrap' as bootstrap;
+@use 'variables' as *;  // Assuming variables.scss is in the same directory
+
+/* Apply body background and font settings */
+body {
+    background-color: $body-bg;  /* Use your custom body background */
+    font-family: $font-family-sans-serif;  /* Use your custom font family */
+    font-size: $font-size-base;  /* Apply base font size */
+    line-height: $line-height-base;  /* Apply base line height */
+}
+
+/* Style for password input field */
+input[type="password"] {
+    background-color: #fff;  /* Light background */
+    color: #000 !important;  /* Ensure text is visible */
+    border: 1px solid #ccc;  /* Border color */
+    font-size: 1rem;  /* Font size */
+    padding: 0.5rem;  /* Padding for better spacing */
+    border-radius: 4px;  /* Rounded corners */
+    width: 100%;  /* Ensures input takes full width */
+    text-align: left;  /* Align text to the left */
+}
+
+/* Styling when password field is focused */
+input[type="password"]:focus {
+    border-color: #ffffff;  /* Highlight border on focus */
+    outline: none;  /* Remove default outline */
+}
+
+/* Placeholder text styling */
+input[type="password"]::placeholder {
+    color: #888;  /* Light gray placeholder text */
+}
+
+/* Ensure that text inside the password field is visible and clear */
+input[type="password"]::-ms-clear {
+    display: none; /* For Internet Explorer */
+}
+input[type="password"]::-webkit-outer-spin-button,
+input[type="password"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="password"]:not(:focus) {
+    color: #000;  /* Ensure color is black even when not focused */
+}
+
+/* Ensure the email field text is black and background is solid (no transparency) */
+input[type="email address"] {
+    background-color: #fff;  /* Light background */
+    color: #000 !important;  /* Ensure text is visible */
+    border: 1px solid #ccc;  /* Border color */
+    font-size: 1rem;  /* Font size */
+    padding: 0.5rem;  /* Padding for better spacing */
+    border-radius: 4px;  /* Rounded corners */
+    width: 100%;  /* Ensures input takes full width */
+    text-align: left;  /* Align text to the left */
+
+}
